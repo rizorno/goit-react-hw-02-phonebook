@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import css from './contact-list.module.scss';
 
 function ContactList({ contacts = [], filter, deleteContact }) {
+  // eslint-disable-next-line array-callback-return
   const elements = contacts.map(element => {
     const { id, name, number } = element;
     const findElementName = name.toLowerCase().includes(filter.toLowerCase());
