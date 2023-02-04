@@ -7,7 +7,7 @@ function Filter({ filter, value }) {
   const idElement = nanoid();
 
   return (
-    <label>
+    <label className={css.label}>
       Find contacts by name or by number
       <input
         id={idElement}
